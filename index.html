@@ -2,178 +2,70 @@
 
 <style>
 body{
-background-image: url('https://i.imgur.com/7cRAHpa.jpg') !important; 
+background-image: url('https://i.imgur.com/BCpH4gt.jpg') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:cover;
-background-color:#000000;
+background-size:100% 100%;
+background-color:#005941;
 }
 
 ::-webkit-scrollbar {width: 3px; height: 3px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #43822e;}
+::-webkit-scrollbar-thumb {background: #d0de57;}
 
-#bigbox1 {
+#bigbox {
 position:absolute;
-background-color:#43822e;
-border:1px solid #000000;
-width:60%;
-height:75%;
-top:11%;
-left:20%;
+background-color:#005941;
+border:1px solid #818c1f;
+width:50%;
+height:72%;
+top:14%;
+left:25%;
 }
 
-#bigbox2 {
+#holderbox1 {
 position:absolute;
-border:1px solid #000000;
-background-color:#ffffff;
-width:58%;
-height:70%;
-top:13.5%;
-left:21%;
-background-image: url('') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:100% 100%;
-}
-
-#line1 {
-position:absolute;
-background-color:#000000;
-width:0.25%;
-height:100%;
-left:49.8%;
-top:0%;
-}
-
-#pen {
-position:absolute;
-width:5%;
-height:60%;
-top:17%;
-left:47.6%;
-background-image: url('https://i.imgur.com/P3Crlsk.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:100% 100%;
-}
-
-#content1 {
-position:absolute;
-padding:2%;
-width:22%;
-height:54.5%;
-top:17%;
-left:51%;
-}
-
-#content2 {
-position:absolute;
-padding:2%;
-overflow:auto;
-width:22%;
-height:54.5%;
-top:17%;
-left:23%;
-}
-
-#title1 {
-position:absolute;
-width:85%;
-height:7%;
-top:1%;
-left:10%;
-color:#000000;
-font-size:3vh;
-text-align:center;
-font-family: 'Rock Salt', cursive;
-letter-spacing:5px;
-line-height:1.6;
-}
-
-#title2 {
-position:absolute;
-width:85%;
-height:7%;
-top:1%;
-left:3%;
-color:#000000;
-font-size:3vh;
-text-align:center;
-font-family: 'Rock Salt', cursive;
-letter-spacing:5px;
-line-height:1.6;
-}
-
-#text1 {
-position:absolute;
-padding:2%;
-overflow:auto;
-width:90%;
-height:83%;
-top:11%;
-left:6%;
-color:#000000;
-font-size:2vh;
-font-family: 'Neucha', cursive;
-}
-
-#text2 {
-position:absolute;
-padding:2%;
-overflow:auto;
-width:90%;
-height:83%;
-top:11%;
-left:1%;
-color:#000000;
-font-size:2vh;
-font-family: 'Neucha', cursive;
+background-color:#088a65;
+border:1px solid #818c1f;
+width:30%;
+height:90%;
+top:5%;
+left:66.5%;
 }
 
 #pic1 {
 position:absolute;
-width:30%;
-height:60%;
-top:1%;
+width:90%;
+height:40%;
+top:2.5%;
 left:5%;
-background-image: url('https://i.imgur.com/vsWIXYH.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:left !important; 
-background-size:100%;
-}
-
-#pic2 {
-position:absolute;
-width:80%;
-height:35%;
-top:61%;
-left:10%;
-background-image: url('https://i.imgur.com/Ll9KXec.jpg') !important; 
+background-image: url('https://i.imgur.com/h2QAmlT.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:contain;
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#basicbox {
-position:absolute;
-width:43%;
-height:46%;
-top:10%;
-left:45%;
-color:#000000;
-font-size:2vh;
-font-family: 'Neucha', cursive;
+#pic1:hover {
+background-image: url('https://i.imgur.com/jc1bSOO.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:100% 100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 #tabbox1 {
 position:absolute;
-background-color:#ffffff;
-border:1px solid #000000;
-width:1.5%;
-height:20%;
-top:5%;
-left:57%;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:45%;
+left:5%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -181,12 +73,12 @@ transition: all 0.8s ease-out;
 
 #tabbox2 {
 position:absolute;
-background-color:#ffffff;
-border:1px solid #000000;
-width:1.5%;
-height:20%;
-top:5%;
-left:62%;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:52%;
+left:5%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -194,12 +86,12 @@ transition: all 0.8s ease-out;
 
 #tabbox3 {
 position:absolute;
-background-color:#ffffff;
-border:1px solid #000000;
-width:1.5%;
-height:20%;
-top:5%;
-left:67%;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:59%;
+left:5%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -207,115 +99,192 @@ transition: all 0.8s ease-out;
 
 #tabbox4 {
 position:absolute;
-background-color:#ffffff;
-border:1px solid #000000;
-width:1.5%;
-height:20%;
-top:5%;
-left:72%;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:66%;
+left:5%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tabbox1:hover, #tabbox2:hover, #tabbox3:hover, #tabbox4:hover {
-top:3%;
+#tabbox5 {
+position:absolute;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:73%;
+left:5%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+border:1px solid #818c1f;
+background-color:#46b38b;
+width:90%;
+height:5%;
+top:80%;
+left:5%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover,#tabbox6:hover {
+background-color:#005941;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#name {
+position:absolute;
+width:90%;
+height:10%;
+top:87%;
+left:5%;
+text-align:center;
+font-size:4vh;
+color:#FFFFFF;
+line-height:2;
+font-family: 'Uncial Antiqua', cursive;
+}
+
+#holderbox2 {
+position:absolute;
+background-color:#088a65;
+border:1px solid #818c1f;
+width:59%;
+height:90%;
+top:5%;
+left:3.5%;
+}
+
+#title {
+position:absolute;
+border:1px solid #818c1f;
+background-color:#46b38b;
+padding:2%;
+width:87%;
+height:5%;
+top:4%;
+left:4%;
+text-align:center;
+font-size:3.5vh;
+color:#FFFFFF;
+line-height:1;
+font-family: 'Uncial Antiqua', cursive;
+}
+
+#content {
+position:absolute;
+border:1px solid #818c1f;
+background-color:#46b38b;
+overflow:auto;
+padding:2%;
+width:87%;
+height:76%;
+top:15%;
+left:4%;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Fira Sans', sans-serif;
 }
 
 .tabs{
 display:block;
 width:100%;
 height:100%;
-text-align:left;
-writing-mode: vertical-rl;
-text-orientation: sideways;
-color:#666666;
-font-family: 'Rock Salt', cursive;
-font-size:1.3vh;
+text-align:center;
+color:#d0de57;
+font-family: 'Fira Sans', sans-serif;
+text-transform:uppercase;
+letter-spacing:5px;
+font-size:2vh;
+line-height:1.7;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
 .tabs:hover {
+color:#FFFFFF;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8 {
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12 {
 display: none;
 }
 
 i {
-color:#666666;
+color:#cede95;
+font-family: 'Fira Sans', sans-serif;
 }
 
 a {
-color:#43822e;
+color:#cede95;
+font-family: 'Fira Sans', sans-serif;
 }
 
 h1 {
-color: #000000;
-font-family: 'Neucha', cursive;
-text-align:right;
-font-size: 2.3vh;
-border-bottom:1px solid #000000;
+color: #cede95;
+font-family: 'Metamorphous', cursive;
+text-align:center;
+font-size: 2vh;
+border-bottom:1px solid #818c1f;
 }
 
 b {
-color:#666666;
-text-transform: uppercase;
-font-family: 'Neucha', cursive;
+color:#cede95;
+font-family: 'Metamorphous', cursive;
 }
 
 </style>
 
 <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur829.cur), auto !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Neucha|Rock+Salt" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content1').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('content2').innerHTML=document.getElementById(id).innerHTML}</script>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Metamorphous|Uncial+Antiqua" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('title').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="bigbox1">
-<div id="line1"></div>
-</div>
+<div id="bigbox">
+<div id="holderbox1">
+<div id="pic1"></div>
 <div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">. Details</span>
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">Details</span>
 </div>
 <div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">. History</span>
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">History</span>
 </div>
 <div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">. Racials</span>
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Lore</span>
 </div>
 <div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">. Magic</span>
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Inventory</span>
 </div>
-<div id="bigbox2">
-<div id="line1"></div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10')">Racials</span>
 </div>
-<div id="content1">
-<div id="title1">
-Observations
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab11');changeNavigation1 ('tab12')">Enchantment</span>
 </div>
-<div id="text1">
-<h1>Appearance</h1><br>
-Relatively small in height and stature (duh, she's a kid), her tiny body doesn't seem malnourished but still is deceptively frail in appearance. With the skinniest arms and legs, she's certainly not an intimidating individual. Her eyes are wide and full of wonder, framed perfectly by a rounded face with squeezable cheeks and the cutest white-toothed smile. While strange for the general area, her skin does is most certainly not pale, but retains the same darker shade shared by the Kre'Nathians and local Tribals of the islands, and her eyes are a dark emerald green. The difference from the majority lies in her soft green hair, and it is indeed naturally colored that way, no dye involved. Usually braided, it's long enough to brush against the bottoms of her shoulder-blades.
-<br><br>
-<h1>Attire</h1><br>
-Technically a princess from an ancient time, she most certainly dresses like one. The images provided are good examples of her usual attire, although if anything else is being worn it will be described in detail. (Hell, there will be times when even the pictured attire will be described in detail.)
-<br><br>
-<h1>Personality</h1><br>
-The child is a genuine and endearing soul. She is naive, innocent, easily trusting those around her unless they have done something for her to believe they are untrustworthy. Adventurous and brave, she can be found stubbornly diving head-first into danger. Her morals are strong, and she is very loud about them too, making her seem sometimes obnoxious but at least her heart's in the right place.
+<div id="name">
+Esmerelda
 </div>
 </div>
-<div id="content2">
-<div id="pic1"></div>
-<div id="basicbox">
-<b>Name:</b> Unknown<br>
+<div id="holderbox2">
+<div id="title">
+Gem of the Isles
+</div>
+<div id="content">
+<p align="center"><b>Name:</b> Unknown<br>
 <b>Alias:</b> XXXXXXXXX<br>
 <b>True Age:</b> Unknown<br>
 <b>Physical Age:</b> Nine Years Old<br>
@@ -326,100 +295,64 @@ The child is a genuine and endearing soul. She is naive, innocent, easily trusti
 <b>Rank:</b> True Practitioner<br>
 <b>Height:</b> 4'1"<br>
 <b>Weight:</b> 65 lbs.
+<br><br>
+<img style="width:51%;" src="https://i.imgur.com/nPS9fpB.jpg"/></p>
 </div>
-<div id="pic2"></div>
 </div>
-
-<div id="pen"></div>
+</div>
 
 <div id="tab1">
-<div id="title1">
-Observations
-</div>
-<div id="text1">
 <h1>Appearance</h1><br>
 Relatively small in height and stature (duh, she's a kid), her tiny body doesn't seem malnourished but still is deceptively frail in appearance. With the skinniest arms and legs, she's certainly not an intimidating individual. Her eyes are wide and full of wonder, framed perfectly by a rounded face with squeezable cheeks and the cutest white-toothed smile. While strange for the general area, her skin does is most certainly not pale, but retains the same darker shade shared by the Kre'Nathians and local Tribals of the islands, and her eyes are a dark emerald green. The difference from the majority lies in her soft green hair, and it is indeed naturally colored that way, no dye involved. Usually braided, it's long enough to brush against the bottoms of her shoulder-blades.
 <br><br>
 <h1>Attire</h1><br>
-Technically a princess from an ancient time, she most certainly dresses like one. The images provided are good examples of her usual attire, although if anything else is being worn it will be described in detail. (Hell, there will be times when even the pictured attire will be described in detail.)
+Technically a princess from an ancient time, she most certainly dresses like one. The images provided are good examples of her usual attire, although if anything else is being worn it will be described in detail.
 <br><br>
 <h1>Personality</h1><br>
 The child is a genuine and endearing soul. She is naive, innocent, easily trusting those around her unless they have done something for her to believe they are untrustworthy. Adventurous and brave, she can be found stubbornly diving head-first into danger. Her morals are strong, and she is very loud about them too, making her seem sometimes obnoxious but at least her heart's in the right place.
 </div>
-</div>
 <div id="tab2">
-<div id="pic1"></div>
-<div id="basicbox">
-<b>Name:</b> Unknown<br>
-<b>Alias:</b> XXXXXXXXX<br>
-<b>True Age:</b> Unknown<br>
-<b>Physical Age:</b> Nine Years Old<br>
-<b>Gender:</b> Female<br>
-<b>Species:</b> XXXXXXXXX<br>
-<b>Race:</b> XXXXXXXXX<br>
-<b>Tree:</b> Enchantment<br>
-<b>Rank:</b> True Practitioner<br>
-<b>Height:</b> 4'1"<br>
-<b>Weight:</b> 65 lbs.
-</div>
-<div id="pic2"></div>
+Girl with the Emerald Eyes
 </div>
 
 <div id="tab3">
-<div id="title1">
-Her Story
-</div>
-<div id="text1">
 <p align="center">Information Redacted<br>To be released soon.</p>
-</div>
+<img align="right" style="height:60%;" src="https://i.imgur.com/10KcEEY.png"/>
 </div>
 <div id="tab4">
-<div id="title2">
-Their Story
-</div>
-<div id="text2">
-<p align="center">Information Redacted<br>To be released soon.</p>
-</div>
+Buried Treasure
 </div>
 
 <div id="tab5">
-<div id="title1">
-Magically Mutated
-</div>
-<div id="text1">
-<img align="right" style="height:90%;" src="https://i.imgur.com/k24dKCk.png"/>
 <p align="center">Information Redacted<br>To be released soon.</p>
-</div>
+<img align="left" style="height:60%;" src="https://i.imgur.com/ccxbuuT.png"/>
 </div>
 <div id="tab6">
-<div id="title2">
-Racials
-</div>
-<div id="text2">
-<img align="left" style="height:45%;" src="https://i.imgur.com/h79v5PE.jpg"/>
-<p align="center">Information Redacted<br>To be released soon.</p>
-</div>
+Humans & Magic Beasts
 </div>
 
 <div id="tab7">
-<div id="title1">
-Enchantress
-</div>
-<div id="text1">
-<p align="center"><b>Rank:</b> True Practitioner</p>
-<br>
-<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
-</div>
+<p align="center">Information Redacted<br>To be released soon.</p>
 </div>
 <div id="tab8">
-<div id="title1">
-Universals
+Toys & Trinkets
 </div>
-<div id="text2">
-<p align="center">Mana Manipulation</p>
-<br>
-<i>"The most basic class of magic, involving the direct manipulation of Mana, is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level. (Most spells taught in class are under this tree. Spells taught in class must be on your character sheet, and any alterations or upgrades to taught spells must be discussed with a professor.)"</i>
+
+<div id="tab9">
+<p align="center">Information Redacted<br>To be released soon.</p>
 </div>
+<div id="tab10">
+Magically Mutated
+</div>
+
+<div id="tab11">
+<h1>Enchantment</h1>
+<i>"The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted."</i>
+<br><br>
+<p align="center">Information Redacted<br>To be released soon.</p>
+</div>
+<div id="tab12">
+True Practitioner
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Esmerelda.mp3" autostart="true" loop="true">
